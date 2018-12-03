@@ -1,28 +1,35 @@
-class Formas(object):
+class IFormas(object):
 	"""docstring for FormasTrigonometricas"""
 	def conectar(self):
 		print("Conectando una forma:..")
 	def desconectar(self):
 		print("Desconectando una forma:..")
 
-class Circulo(Formas):
+class cCirculo(IFormas):
 	"""docstring for Circulo"""	
 	def conectar(self):
 		print("Conectando a Circulo")
 	def desconectar(self):
 		print("Desconectando a Circulo")
 
-class Cuadrado(Formas):
+class cCuadrado(IFormas):
 	"""docstring for Circulo"""	
 	def conectar(self):
 		print("Conectando a Cuadrado")
 	def desconectar(self):
 		print("Desconectando a Cuadrado")
 
-class Triangulo(Formas):
+class cTriangulo(IFormas):
 	"""docstring for Circulo"""	
 	def conectar(self):
 		print("Conectando a Triangulo")
 	def desconectar(self):
 		print("Desconectando a Triangulo")
 
+class cVacia(IFormas):
+	"""docstring for Vacio"""
+	def conectar(self):
+		print("Conectando a NAda")
+	def desconectar(self):
+		print("Desconectando a NAda")
+		
