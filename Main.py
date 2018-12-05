@@ -1,6 +1,8 @@
 import Fabrica
 
 a=Fabrica.cFabrica()
-b=a.getFormas("triangulo").conectar("")
+a.getFormas("triangulo").conectar()
+a.getFormas("triangulo").desconectar()
+
 
 
